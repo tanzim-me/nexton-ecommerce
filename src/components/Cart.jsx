@@ -22,7 +22,7 @@ export default function Cart({ isOpen, closeCart }) {
         {/* ---------------------------- Cart items part start --------------------------- */}
 
         <div className="w-[400px] h-screen bg-white px-5 py-5">
-          <div className="w-full h-[700px] flex flex-col gap-5 overflow-y-auto mb-[125px]">
+          <div className="w-full h-[700px] flex flex-col gap-5 overflow-y-auto mb-[115px]">
             <SingleCartItem />
           </div>
 

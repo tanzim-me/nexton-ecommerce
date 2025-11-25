@@ -17,12 +17,12 @@ export default function Home() {
 
   return (
     <>
-    {/* ******************************* Banner Slider part start **************************** */}
-      <div className="slider-container">
+      {/* ******************************* Banner Slider part start **************************** */}
+      <div className="slider-container overflow-hidden">
         <Slider {...settings}>
           {/* ---------------------------- 1st slider div part start --------------------------- */}
 
-          <div className="w-full relative">
+          <div className="w-full focus:outline-0 relative">
             {/* ---------------------------- slider image --------------------------- */}
             <img src={hero} alt="banner image" className="w-full" />
 
@@ -48,7 +48,7 @@ export default function Home() {
           {/* ---------------------------- 1st slider div part end --------------------------- */}
           {/* ---------------------------- 2nd slider div part start --------------------------- */}
 
-          <div className="w-full relative">
+          <div className="w-full focus:outline-0 relative">
             {/* ---------------------------- slider image --------------------------- */}
             <img src={hero} alt="banner image" className="w-full" />
 
