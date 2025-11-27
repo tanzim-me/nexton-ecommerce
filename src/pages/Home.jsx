@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {/* ******************************* Banner Slider part start **************************** */}
-      <div className="slider-container overflow-hidden">
+      <div className="slider-container overflow-hidden banner-slider">
         <Slider {...settings}>
           {/* ---------------------------- 1st slider div part start --------------------------- */}
 
