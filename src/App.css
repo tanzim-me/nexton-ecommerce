@@ -15,7 +15,6 @@
     align-items: center;
     position: absolute;
     bottom: 24px;
-
 }   
 
 .banner-slider .slick-dots li {
@@ -40,4 +39,36 @@
 .banner-slider .slick-dots .slick-active button {
     background: #111827;
 }
+
 /* ************************************* Banner slider dots part end *********************************** */
+/* ************************************* Explore slider dots part start *********************************** */
+.explore-slider .slick-dots {
+    display: flex !important;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+.explore-slider .slick-dots li {
+    width: 6px;
+    height: 6px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.explore-slider .slick-dots li button {
+    width: 6px !important;
+    height: 6px !important;
+    padding: 0px;  
+    border-radius: 50%;
+    background-color: #11182780;
+}
+
+.explore-slider .slick-dots li button::before {
+    content: none;
+}
+
+.explore-slider .slick-dots .slick-active button {
+    background: #111827;
+}
+
+/* ************************************* Explore slider dots part start *********************************** */
