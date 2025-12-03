@@ -25,11 +25,11 @@ const Navbar = () => {
             id="search_bar"
             className="w-[400px] h-[52px] flex gap-2.5 items-center bg-[#F8F8F8] rounded-[100px] px-6"
           >
-            <CiSearch className="text-[#4B5563]" />
+            <CiSearch className="text-secondary" />
             <input
               type="text"
               placeholder="Search in products..."
-              className="w-full focus:outline-0 placeholder:font-poppins placeholder:font-normal placeholder:text-[14px] placeholder:text-[#4B5563] font-poppins text-[#4B5563]"
+              className="w-full focus:outline-0 placeholder:font-poppins placeholder:font-normal placeholder:text-[14px] placeholder:text-secondary font-poppins text-secondary"
             />
           </div>
 
@@ -37,12 +37,12 @@ const Navbar = () => {
           <div id="menu_links" className="flex gap-5.5">
             {/* User link */}
             <Link to="/user">
-              <RiUser3Line className="text-[24px] text-[#4B5563] hover:scale-110 hover:font-bold transition duration-300" />
+              <RiUser3Line className="text-[24px] text-secondary hover:scale-110 hover:font-bold transition duration-300" />
             </Link>
 
             {/* Cart button */}
             <button onClick={() => setCartOpen(prev => !prev)} className="relative">
-              <IoCartOutline className="text-[24px] text-[#4B5563] hover:scale-120 hover:font-bold transition duration-300" />
+              <IoCartOutline className="text-[24px] text-secondary hover:scale-120 hover:font-bold transition duration-300" />
 
               {/* ------------------------------ Cart items number ------------------------------ */}
               <div className="w-5 h-5 bg-[#0EA5E9] rounded-full flex justify-center items-center text-white font-poppins font-medium text-[12px] absolute top-[-9px] -right-3">

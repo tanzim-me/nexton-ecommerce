@@ -3,7 +3,6 @@ import { Link } from "react-router";
 import SingleCartItem from "./SingleCartItem";
 
 export default function Cart({ isOpen, closeCart }) {
-  console.log(isOpen);
   return (
     <>
       {/* ******************************* Cart part start **************************** */}

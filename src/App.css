@@ -43,10 +43,12 @@
 /* ************************************* Banner slider dots part end *********************************** */
 /* ************************************* Explore slider dots part start *********************************** */
 .explore-slider .slick-dots {
+    position: static;
     display: flex !important;
     gap: 6px;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .explore-slider .slick-dots li {
     width: 6px;
@@ -72,3 +74,36 @@
 }
 
 /* ************************************* Explore slider dots part start *********************************** */
+/************************************* Product slider dots part start *********************************** */
+.product-slider .slick-dots {
+    position: static;
+    display: flex !important;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+.product-slider .slick-dots li {
+    width: 6px;
+    height: 6px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.product-slider .slick-dots li button {
+    width: 6px !important;
+    height: 6px !important;
+    padding: 0px;  
+    border-radius: 50%;
+    background-color: #11182780;
+}
+
+.product-slider .slick-dots li button::before {
+    content: none;
+}
+
+.product-slider .slick-dots .slick-active button {
+    background: #111827;
+}
+
+/************************************* Product slider dots part start *********************************** */

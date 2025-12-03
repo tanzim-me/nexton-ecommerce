@@ -106,7 +106,7 @@ export default function ExploreCard() {
               <div className="w-[113px] h-9 flex gap-2 justify-center items-center border-l-3 border-[#E5E7EB]">
                 <Link
                   to="/explore"
-                  className="font-poppins font-medium text-[14px] text-[#4B5563]"
+                  className="font-poppins font-medium text-[14px] text-secondary"
                 >
                   SHOP NOW
                 </Link>
