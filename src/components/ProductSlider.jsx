@@ -4,6 +4,7 @@ import axios from "axios";
 import ProductCard from "./ProductCard";
 
 export default function ProductSlider() {
+    
   const [products, setProducts] = useState([]);
 
   const settings = {
@@ -20,6 +21,7 @@ export default function ProductSlider() {
       .then((res) => setProducts(res.data.products))
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <section className="container">
       <div className="slider-container product-slider">

@@ -8,7 +8,7 @@ import twitter from "../assets/images/twitter.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-[318px] bg-[#E5E7EB] px-30 py-15 mt-[52px]">
+    <footer className="w-full h-[318px] px-30 py-15 mt-[52px] border-2 border-[#E5E7EB]">
       <div className="container flex gap-70 justify-start">
         <div>
           <Link to="" className="inline-block mb-5">
@@ -148,7 +148,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
       </div>
     </footer>
   );

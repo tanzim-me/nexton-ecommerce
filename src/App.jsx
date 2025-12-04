@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import CheckOut from './pages/CheckOut'
 import "./App.css"
 import Explore from './pages/Explore'
+import Login from './pages/Login'
+import Registration from './pages/Registration'
 
 const App = () => {
 
@@ -13,6 +15,8 @@ const App = () => {
       <Route index element={<Home />} />
       <Route path="/checkout" element={<CheckOut />} />
       <Route path="/explore" element={<Explore />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/registration" element={<Registration />} />
     </Route>
   ))
   return (

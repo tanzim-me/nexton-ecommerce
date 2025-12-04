@@ -33,7 +33,7 @@ export default function Banner() {
             </h1>
 
             {/* ---------------------------- Explore now link --------------------------- */}
-            <Link className="w-[198px] h-16 bg-theme rounded-full flex gap-2.5 justify-center items-center hover:scale-105 transition duration-300 ">
+            <Link to="/explore" className="w-[198px] h-16 bg-theme rounded-full flex gap-2.5 justify-center items-center hover:scale-105 transition duration-300 ">
               <p className="font-poppins font-medium text-[16px] text-white">
                 Explore now
               </p>
