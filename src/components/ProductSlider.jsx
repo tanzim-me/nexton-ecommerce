@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import axios from "axios";
 import ProductCard from "./ProductCard";
+import { useNavigate } from "react-router";
 
 export default function ProductSlider() {
     
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate()
 
   const settings = {
     dots: true,
@@ -22,6 +24,10 @@ export default function ProductSlider() {
       .catch((err) => console.log(err));
   }, []);
 
+  function handleDetails(id) {
+    navigate(`product/${id}`)
+  }
+
   return (
     <section className="container">
       <div className="slider-container product-slider">
@@ -35,6 +41,7 @@ export default function ProductSlider() {
                 price={product.price}
                 rating={product.rating}
                 stock={product.stock}
+                productID={() => handleDetails(product.id)}
               />
             </div>
           ))}

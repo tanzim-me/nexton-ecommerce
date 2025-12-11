@@ -4,7 +4,7 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 
-export default function ProductPrice() {
+export default function ProductPrice({ rating, reviewCount, price, discountPrice }) {
   const [selected, setSelected] = useState();
   const [quantity, setQuantity] = useState(1);
 
@@ -23,15 +23,15 @@ export default function ProductPrice() {
       <div className="flex justify-between mb-8">
         <div className="font-poppins text-[16px] text-secondary flex gap-2">
           <FaStar className="text-[16px] text-[#FBBF24]" />
-          <p className="font-semibold">4.9</p>
-          <p className="font-medium underline">142 reviews</p>
+          <p className="font-semibold">{rating}</p>
+          <p className="font-medium underline">{reviewCount} reviews</p>
         </div>
         <div className="flex flex-col items-end">
           <h2 className="font-poppins font-semibold text-[24px] text-theme">
-            $169.99
+            ${price}
           </h2>
           <p className="font-poppins font-medium text-[14px] text-secondary line-through">
-            $199.99
+            ${discountPrice}
           </p>
         </div>
       </div>
@@ -104,8 +104,8 @@ export default function ProductPrice() {
         </button>
       </div>
       <div className="font-poppins font-normal text-[16px] text-secondary flex justify-between items-center mb-2.5">
-        <p>$169.99 x 1</p>
-        <p>$169.99</p>
+        <p>${`${price} x ${quantity}`}</p>
+        <p>${price * quantity}</p>
       </div>
       <div className="font-poppins font-normal text-[16px] text-secondary flex justify-between items-center mb-4">
         <p>Tax estimate</p>
@@ -114,7 +114,7 @@ export default function ProductPrice() {
       <hr className="text-[#E5E7EB] mb-4" />
       <div className="font-poppins font-semibold text-[16px] text-theme flex justify-between items-center">
         <p>Total</p>
-        <p>$169.99</p>
+        <p>${price * quantity}</p>
       </div>
     </div>
   );

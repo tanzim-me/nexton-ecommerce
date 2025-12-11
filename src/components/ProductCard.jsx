@@ -1,21 +1,25 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
-import { Link } from "react-router";
 
-export default function ProductCard({ img_src, title, price, rating, stock }) {
+export default function ProductCard({
+  img_src,
+  title,
+  price,
+  rating,
+  stock,
+  productID,
+}) {
   return (
     <section className="w-[309px] h-[464px] pb-4 overflow-hidden flex flex-col justify-between relative group">
       {/* ------------------------- Hover effect ----------------------- */}
       <div>
-        <Link
-          to="/explore"
-          className="w-full h-full bg-[#1118274f] rounded-2xl absolute bottom-full group-hover:bottom-0 transition-all duration-300"
-        ></Link>
         <button
-          
-          className="w-15 h-15 p-2 rounded-full hover:bg-theme hover:cursor-pointer active:scale-110 flex justify-center items-center absolute -top-12 group-hover:top-8 right-6 transition-all duration-300 group/icon"
-        >
+          onClick={productID}
+          to="/product"
+          className="w-full h-full bg-[#1118274f] rounded-2xl absolute bottom-full group-hover:bottom-0 transition-all duration-300"
+        ></button>
+        <button className="w-15 h-15 p-2 rounded-full hover:bg-theme hover:cursor-pointer active:scale-110 flex justify-center items-center absolute -top-12 group-hover:top-8 right-6 transition-all duration-300 group/icon">
           <IoCartOutline className="text-3xl group-hover/icon:text-white duration-300" />
         </button>
       </div>
