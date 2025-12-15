@@ -5,9 +5,8 @@ import ProductCard from "./ProductCard";
 import { useNavigate } from "react-router";
 
 export default function ProductSlider() {
-    
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const settings = {
     dots: true,
@@ -18,14 +17,14 @@ export default function ProductSlider() {
   };
 
   useEffect(() => {
-    axios
-      .get("https://dummyjson.com/products")
-      .then((res) => setProducts(res.data.products))
-      .catch((err) => console.log(err));
+  axios
+    .get("https://dummyjson.com/products")
+    .then((res) => setProducts(res.data.products))
+    .catch(console.log);
   }, []);
 
-  function handleDetails(id) {
-    navigate(`product/${id}`)
+  function handleDetails(id, category) {
+  navigate(`/product/${id}?category=${category}`);
   }
 
   return (
@@ -41,7 +40,9 @@ export default function ProductSlider() {
                 price={product.price}
                 rating={product.rating}
                 stock={product.stock}
-                productID={() => handleDetails(product.id)}
+                category={product.category}
+                id={product.id}
+                onDetailsClick={handleDetails}
               />
             </div>
           ))}

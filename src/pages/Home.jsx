@@ -18,15 +18,27 @@ export default function Home() {
       <Services />
       {/* ******************************* Services part end **************************** */}
       {/* ******************************* Explore part start **************************** */}
-      <Header bold_text={"Start exploring."} light_text={" Good things are waiting for you"} margin_top={"mt-[88px]"} />
+      <Header
+        bold_text={"Start exploring."}
+        light_text={" Good things are waiting for you"}
+        margin_top={"mt-[88px]"}
+      />
       <ExploreCard />
       {/* ******************************* Explore part end **************************** */}
       {/* ******************************* Recommendations part start **************************** */}
-      <Header bold_text={"Recommendations."} light_text={" Best matching products for you"} margin_top={"mt-[176px]"} />
+      <Header
+        bold_text={"Recommendations."}
+        light_text={" Best matching products for you"}
+        margin_top={"mt-[176px]"}
+      />
       <ProductSlider />
       {/* ******************************* Recommendations part end **************************** */}
       {/* ******************************* Best sellers part start **************************** */}
-      <Header bold_text={"Best Sellers."} light_text={" Best selling of the month"} margin_top={"mt-[176px]"} />
+      <Header
+        bold_text={"Best Sellers."}
+        light_text={" Best selling of the month"}
+        margin_top={"mt-[176px]"}
+      />
       <ProductSlider />
       {/* ******************************* Best sellers part end **************************** */}
       {/* ******************************* Footer image part start **************************** */}

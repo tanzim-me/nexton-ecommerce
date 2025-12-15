@@ -1,109 +1,109 @@
 /* ************************************* Google fonts ********************************* */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ************************************* Custom css *********************************** */
 
 /* ************************************* Banner slider dots part start *********************************** */
-.banner-slider{
-    position: relative;
+.banner-slider {
+  position: relative;
 }
 
 .banner-slider .slick-dots {
-    display: flex !important;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 24px;
-}   
+  display: flex !important;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 24px;
+}
 
 .banner-slider .slick-dots li {
-    width: 8px;
-    height: 8px;
-    padding: 0px;
-    margin: 0px;
+  width: 8px;
+  height: 8px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .banner-slider .slick-dots li button {
-    width: 8px !important;
-    height: 8px !important;
-    padding: 0px;
-    border: 1px solid #111827;
-    border-radius: 50%;
+  width: 8px !important;
+  height: 8px !important;
+  padding: 0px;
+  border: 1px solid #111827;
+  border-radius: 50%;
 }
 
 .banner-slider .slick-dots li button::before {
-    content: none;
+  content: none;
 }
 
 .banner-slider .slick-dots .slick-active button {
-    background: #111827;
+  background: #111827;
 }
 
 /* ************************************* Banner slider dots part end *********************************** */
 /* ************************************* Explore slider dots part start *********************************** */
 .explore-slider .slick-dots {
-    position: static;
-    display: flex !important;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+  position: static;
+  display: flex !important;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 .explore-slider .slick-dots li {
-    width: 6px;
-    height: 6px;
-    padding: 0px;
-    margin: 0px;
+  width: 6px;
+  height: 6px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .explore-slider .slick-dots li button {
-    width: 6px !important;
-    height: 6px !important;
-    padding: 0px;  
-    border-radius: 50%;
-    background-color: #11182780;
+  width: 6px !important;
+  height: 6px !important;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #11182780;
 }
 
 .explore-slider .slick-dots li button::before {
-    content: none;
+  content: none;
 }
 
 .explore-slider .slick-dots .slick-active button {
-    background: #111827;
+  background: #111827;
 }
 
 /* ************************************* Explore slider dots part start *********************************** */
 /************************************* Product slider dots part start *********************************** */
 .product-slider .slick-dots {
-    position: static;
-    display: flex !important;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 64px;
+  position: static;
+  display: flex !important;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
 }
 .product-slider .slick-dots li {
-    width: 6px;
-    height: 6px;
-    padding: 0px;
-    margin: 0px;
+  width: 6px;
+  height: 6px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .product-slider .slick-dots li button {
-    width: 6px !important;
-    height: 6px !important;
-    padding: 0px;  
-    border-radius: 50%;
-    background-color: #11182780;
+  width: 6px !important;
+  height: 6px !important;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #11182780;
 }
 
 .product-slider .slick-dots li button::before {
-    content: none;
+  content: none;
 }
 
 .product-slider .slick-dots .slick-active button {
-    background: #111827;
+  background: #111827;
 }
 
 /************************************* Product slider dots part start *********************************** */

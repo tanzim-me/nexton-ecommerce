@@ -1,7 +1,17 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
 
-export default function ProductDetails({ title, description, warranty, policy, shipping, sales, rating, reviewCount, keywords }) {
+export default function ProductDetails({
+  title,
+  description,
+  warranty,
+  policy,
+  shipping,
+  sales,
+  rating,
+  reviewCount,
+  keywords,
+}) {
   return (
     <section>
       <h2 className="font-poppins font-semibold text-[36px] text-theme mb-4">
@@ -30,15 +40,14 @@ export default function ProductDetails({ title, description, warranty, policy, s
         Keywords
       </h2>
       <div className="font-poppins font-normal text-[12px] text-secondary flex gap-2 items-center">
-        {
-          keywords.map(keyword => (
-        <button key={keyword} className="h-8 rounded-full border border-[#E5E7EB] px-3.5 flex gap-1 justify-center items-center">
-          <BsStars />
-          ${keyword}
-        </button>
-
-          ))
-        }
+        {keywords.map((keyword) => (
+          <button
+            key={keyword}
+            className="h-8 rounded-full border border-[#E5E7EB] px-3.5 flex gap-1 justify-center items-center"
+          >
+            <BsStars />${keyword}
+          </button>
+        ))}
       </div>
     </section>
   );

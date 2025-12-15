@@ -4,7 +4,12 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 
-export default function ProductPrice({ rating, reviewCount, price, discountPrice }) {
+export default function ProductPrice({
+  rating,
+  reviewCount,
+  price,
+  discountPrice,
+}) {
   const [selected, setSelected] = useState();
   const [quantity, setQuantity] = useState(1);
 

@@ -8,14 +8,18 @@ export default function ProductCard({
   price,
   rating,
   stock,
-  productID,
+  category,
+  id,
+  onDetailsClick,
 }) {
   return (
     <section className="w-[309px] h-[464px] pb-4 overflow-hidden flex flex-col justify-between relative group">
       {/* ------------------------- Hover effect ----------------------- */}
       <div>
         <button
-          onClick={productID}
+          onClick={() => {
+            onDetailsClick(id, category);
+          }}
           to="/product"
           className="w-full h-full bg-[#1118274f] rounded-2xl absolute bottom-full group-hover:bottom-0 transition-all duration-300"
         ></button>
